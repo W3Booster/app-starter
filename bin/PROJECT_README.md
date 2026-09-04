@@ -23,7 +23,7 @@ Edit `src/render.ts` to change player cards, `src/style.css` for styles, and the
 4. Commit `package.json` and `src/w3booster.generated.ts`.
 5. Use Test locally, then launch your app through W3Booster. A direct browser visit does not authorize live data.
 
-The default URL runs synthetic demo data. Live surface URLs must include `demo=0`. Live errors never fall back to demo data. No active match is a normal waiting state. Host window actions require an authenticated W3Booster host.
+The default URL runs synthetic demo data. Live surface URLs must include `demo=0`. Live errors never fall back to demo data. No active match is a normal waiting state. Host actions require an authenticated W3Booster host.
 
 ## Check and ship
 
@@ -36,6 +36,6 @@ npm run test:browser
 
 Deploy `dist/` to your HTTPS static host and update your app URLs with `?demo=0`. After editing the app definition, explicitly run `npm run w3booster:sync`. Never store launch tokens or database credentials in browser code. Keep URL fragments for SDK authorization.
 
-[Full tutorial](https://website.w3booster.com/developer/first-app/) · [Focused examples](https://github.com/W3Booster/app-examples) · [Complex Angular starting point](https://github.com/W3Booster/app-match-vision/blob/main/docs/START_FROM_MATCH_VISION.md)
+[Full tutorial](https://website.w3booster.com/developer/first-app/) · [Focused examples](https://website.w3booster.com/developer/examples/) · [Complex Angular starting point](https://github.com/W3Booster/app-match-vision/blob/main/docs/START_FROM_MATCH_VISION.md)
 
 Source is MIT licensed; retain LICENSE when reusing it.
