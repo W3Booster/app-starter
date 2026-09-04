@@ -1,0 +1,45 @@
+{
+  "name": "@w3booster/app-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "W3Booster App Starter — a standalone W3Booster TypeScript example",
+  "license": "MIT",
+  "repository": "https://github.com/W3Booster/app-starter",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "check": "tsc --noEmit && node --test scripts/create.test.mjs",
+    "build": "npm run check && vite build && node scripts/manifest.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 5173 --strictPort",
+    "test:browser": "node scripts/browser-test.mjs",
+    "screenshots": "npm run build && node scripts/browser-test.mjs --screenshot"
+  },
+  "engines": {
+    "node": ">=22.22.3"
+  },
+  "dependencies": {
+    "@w3booster/sdk": "1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "playwright": "^1.62.1",
+    "typescript": "~6.0.3",
+    "vite": "8.2.2"
+  },
+  "bin": {
+    "w3booster-create": "bin/create.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "scripts",
+    "index.html",
+    "tsconfig.json",
+    "vite.config.ts",
+    "app-definition.json",
+    "README.md",
+    "LICENSE",
+    ".nvmrc",
+    "example.json"
+  ]
+}

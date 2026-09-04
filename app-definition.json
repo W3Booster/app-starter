@@ -1,0 +1,15 @@
+{
+  "name": "My W3Booster app",
+  "surfaces": [
+    "application"
+  ],
+  "applicationUrl": "http://localhost:5173/?demo=0",
+  "scopes": [
+    "match:read",
+    "players:read"
+  ],
+  "settingsSchema": {
+    "version": 1,
+    "sections": []
+  }
+}
