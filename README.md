@@ -6,6 +6,17 @@ A minimal TypeScript starting point: one dashboard, one SDK runtime, no official
 
 ## Run locally
 
+Create your own project directly:
+
+```sh
+npx --yes --package=github:W3Booster/app-starter w3booster-create my-app
+cd my-app
+npm ci
+npm run dev
+```
+
+Or use **Use this template** on GitHub. To explore the starter itself:
+
 Node.js 22.22.3 or newer. No account, Warcraft III, desktop client, or database needed for demo mode.
 
 ```sh
