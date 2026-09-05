@@ -39,3 +39,5 @@ Deploy `dist/` to your HTTPS static host and update your app URLs with `?demo=0`
 [Full tutorial](https://website.w3booster.com/developer/first-app/) · [Focused examples](https://website.w3booster.com/developer/examples/) · [Complex Angular starting point](https://github.com/W3Booster/app-match-vision/blob/main/docs/START_FROM_MATCH_VISION.md)
 
 Source is MIT licensed; retain LICENSE when reusing it.
+
+Shared game context is included by SDK 1.1.0 without a scope. Use `gameContext(state)` from `@w3booster/sdk/selectors` for HUD scale (default 1), chat visibility, and team-color mode. Do not request the retired `overlay:read` scope.

@@ -71,3 +71,7 @@ The build emits `example-bindings.json` from the binding actually compiled into 
 For a complete Angular product, [start from Match Vision](https://github.com/W3Booster/app-match-vision/blob/main/docs/START_FROM_MATCH_VISION.md). For other focused apps, see the [example directory](https://website.w3booster.com/developer/examples/).
 
 MIT licensed; retain [LICENSE](LICENSE) when reusing source. No Warcraft artwork is bundled.
+
+## Shared game context
+
+This example uses SDK 1.1.0. Shared HUD scale, chat-input visibility, and team-color mode are available through `gameContext(state)` from `@w3booster/sdk/selectors`, without an additional scope. Request only the match/player data this app consumes. App-specific values belong in `state.application.data`; Match Vision’s score is not shared game context.
