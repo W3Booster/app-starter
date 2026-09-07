@@ -36,7 +36,7 @@ npm run test:browser
 
 Deploy `dist/` to your HTTPS static host and update your app URLs with `?demo=0`. After editing the app definition, explicitly run `npm run w3booster:sync`. Never store launch tokens or database credentials in browser code. Keep URL fragments for SDK authorization.
 
-[Full tutorial](https://website.w3booster.com/developer/first-app/) · [Focused examples](https://website.w3booster.com/developer/examples/) · [Complex Angular starting point](https://github.com/W3Booster/app-match-vision/blob/main/docs/START_FROM_MATCH_VISION.md)
+[Full tutorial](https://w3booster.com/developer/first-app/) · [Focused examples](https://w3booster.com/developer/examples/) · [Complex Angular starting point](https://github.com/W3Booster/app-match-vision/blob/main/docs/START_FROM_MATCH_VISION.md)
 
 Source is MIT licensed; retain LICENSE when reusing it.
 

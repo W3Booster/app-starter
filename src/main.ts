@@ -20,7 +20,7 @@ document.documentElement.classList.toggle('overlay-root', overlay);
 const root = document.querySelector<HTMLDivElement>('#app')!;
 const shell = element('main', '', 'shell');
 const header = element('header');
-const brand = element('a', presentation.brand, 'brand'); brand.href = 'https://website.w3booster.com/developer/examples/'; header.append(brand);
+const brand = element('a', presentation.brand, 'brand'); brand.href = 'https://w3booster.com/developer/examples/'; header.append(brand);
 const headerActions = element('div', '', 'header-actions');
 const repository = element('a', 'Public repository ↗', 'repository-link'); repository.href = 'https://github.com/W3Booster/app-starter'; repository.target = '_blank'; repository.rel = 'noopener noreferrer';
 const badge = element('span', demo ? 'DEMO DATA' : 'LIVE CONNECTION', 'badge'); headerActions.append(badge, repository); header.append(headerActions);
@@ -44,7 +44,7 @@ if (demo) {
 }
 const feedback = element('p', '', 'notice'); feedback.setAttribute('role', 'status');
 const footer = element('footer');
-for (const [text, href] of [['Build your own', 'https://website.w3booster.com/developer/first-app/'], ['View source', 'https://github.com/W3Booster/app-starter'], ['SDK reference', 'https://website.w3booster.com/developer/api/']]) {
+for (const [text, href] of [['Build your own', 'https://w3booster.com/developer/first-app/'], ['View source', 'https://github.com/W3Booster/app-starter'], ['SDK reference', 'https://w3booster.com/developer/api/']]) {
   const link = element('a', text); link.href = href; footer.append(link);
 }
 const sourceLink = element('a', 'Read this example’s code ↗', 'source-link'); sourceLink.href = 'https://github.com/W3Booster/app-starter/blob/main/src/render.ts'; sourceLink.target = '_blank'; sourceLink.rel = 'noopener noreferrer'; controls.append(sourceLink);

@@ -27,4 +27,4 @@ await writeFile(resolve(target, 'package.json'), JSON.stringify(manifest, null, 
 await writeFile(resolve(target, 'package-lock.json'), JSON.stringify(lock, null, 2) + '\n');
 await cp(resolve(source, 'bin/PROJECT_README.md'), resolve(target, 'README.md'));
 await writeFile(resolve(target, '.gitignore'), 'node_modules/\ndist/\n.env*\n');
-console.log(`Created ${target}\n\nNext:\n  cd ${JSON.stringify(args[0])}\n  npm ci\n  npm run dev\n\nOpen http://localhost:5173/\nGuide: https://website.w3booster.com/developer/first-app/`);
+console.log(`Created ${target}\n\nNext:\n  cd ${JSON.stringify(args[0])}\n  npm ci\n  npm run dev\n\nOpen http://localhost:5173/\nGuide: https://w3booster.com/developer/first-app/`);

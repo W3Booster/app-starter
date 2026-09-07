@@ -2,7 +2,7 @@
 
 A minimal TypeScript starting point: one dashboard, one SDK runtime, no official app identity.
 
-[Try it now](https://w3booster.github.io/app-starter/) · [Developer docs](https://website.w3booster.com/developer/) · [All examples](https://website.w3booster.com/developer/examples/)
+[Try it now](https://w3booster.github.io/app-starter/) · [Developer docs](https://w3booster.com/developer/) · [All examples](https://w3booster.com/developer/examples/)
 
 ## Run locally
 
@@ -68,7 +68,7 @@ The screenshot command captures the real interface to `docs/screenshot.png`. Dep
 
 The build emits `example-bindings.json` from the binding actually compiled into the app. Official catalog reapply checks each deployed app independently. No database or user credentials belong in this repository or Pages secrets.
 
-For a complete Angular product, [start from Match Vision](https://github.com/W3Booster/app-match-vision/blob/main/docs/START_FROM_MATCH_VISION.md). For other focused apps, see the [example directory](https://website.w3booster.com/developer/examples/).
+For a complete Angular product, [start from Match Vision](https://github.com/W3Booster/app-match-vision/blob/main/docs/START_FROM_MATCH_VISION.md). For other focused apps, see the [example directory](https://w3booster.com/developer/examples/).
 
 MIT licensed; retain [LICENSE](LICENSE) when reusing source. No Warcraft artwork is bundled.
 
