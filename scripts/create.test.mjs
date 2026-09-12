@@ -18,6 +18,9 @@ test('new projects are independent, locked, unregistered, and never overwrite ex
     const main = await readFile(join(target, 'src/main.ts'), 'utf8');
     assert.doesNotMatch(main, /getApplication|src\/registered|app_[a-f0-9]{24}/);
     assert.equal(JSON.parse(await readFile(join(target, 'package-lock.json'), 'utf8')).name, 'my-app');
+    const lock = JSON.parse(await readFile(join(target, 'package-lock.json'), 'utf8'));
+    assert.equal(lock.packages[''].dependencies['@w3booster/sdk'], pkg.dependencies['@w3booster/sdk']);
+    assert.equal(lock.packages['node_modules/@w3booster/sdk'].version, pkg.dependencies['@w3booster/sdk']);
     await access(join(target, 'example.json'));
     assert.notEqual(create().status, 0);
     assert.equal(JSON.parse(await readFile(join(target, 'package.json'), 'utf8')).name, 'my-app');
