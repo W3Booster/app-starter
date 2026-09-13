@@ -40,4 +40,4 @@ Deploy `dist/` to your HTTPS static host and update your app URLs with `?demo=0`
 
 Source is MIT licensed; retain LICENSE when reusing it.
 
-Shared game context is included by SDK 4.0.1 without a scope. Use `gameContext(state)` from `@w3booster/sdk/selectors` for HUD scale (default 1), chat visibility, and team-color mode. Do not request the retired `overlay:read` scope.
+Shared game context is included by SDK 4.0.2 without a scope. Use `gameContext(state)` from `@w3booster/sdk/selectors` for HUD scale (default 1), chat visibility, and team-color mode. Do not request the retired `overlay:read` scope.
